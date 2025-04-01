@@ -12,7 +12,8 @@ const {Cart} = require('./model/Cart');
 
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/bhavana')
+let MONGODB_URL = 'mongodb+srv://bhavana27achar:RjZYpvsQDTUTD2P1@cluster0.pog4pcq.mongodb.net/?retryWrites=true&w=majority'
+mongoose.connect(MONGODB_URL)
 .then(()=>{
     console.log('db connected');
 }).catch((err)=>{
